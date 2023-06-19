@@ -6,9 +6,11 @@ The Task Management Web Application is a simple web application built with Djang
 
 To install and run the Task Management API, follow these steps:
 
-1. Clone the repository: `git clone <repository_url>`
-2. Navigate to the API directory: `cd api`
-3. Create a virtual environment (optional but recommended):
+1. Clone the repository: `git clone https://github.com/webblyss/assigment`
+2. Navigate to the API directory:
+3.  `cd assignment`
+4.  `cd backend`
+5. Create a virtual environment (optional but recommended):
    - On macOS and Linux:
      ```
      python3 -m venv env
@@ -19,9 +21,9 @@ To install and run the Task Management API, follow these steps:
      python -m venv env
      .\env\Scripts\activate
      ```
-4. Install the required dependencies: `pip install -r requirements.txt`
-5. Apply database migrations: `python manage.py migrate`
-6. Start the development server: `python manage.py runserver`
+6. Install the required dependencies: `pip install -r requirements.txt`
+7. Apply database migrations: `python manage.py migrate`
+8. Start the development server: `python manage.py runserver`
 
 The API server will be running at `http://localhost:8000`.
 
@@ -31,10 +33,10 @@ The backend API provides the following endpoints for task management:
 
 - **GET `/api/tasks/`**: Retrieve a list of all tasks.
 - **POST `/api/tasks/`**: Create a new task.
-- **GET `/api/tasks/<task_id>/`**: Retrieve a specific task.
+- **GET `/api/tasks/<task_id>/`**: Retrieve a specific task..
 - **PUT `/api/tasks/<task_id>/`**: Update a specific task.
 - **DELETE `/api/tasks/<task_id>/`**: Delete a specific task.
-- **PUT `/api/tasks/<task_id>/complete/`**: Mark a specific task as completed.
+- **PUT `/api/tasks/<task_id>/complete/`**: Mark a specific task as completed..
 
 
 
