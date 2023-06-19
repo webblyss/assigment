@@ -1,0 +1,26 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+
+# Virtual environment
+venv/
+.env
+
+# IDE/Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Dependency management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing
+htmlcov/
+.coverage
+.coverage.*
+.cypress/
