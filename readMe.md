@@ -46,14 +46,13 @@ Replace `<task_id>` in the URL with the actual ID of the task you want to intera
 
 ## Frontend
 
-The frontend of the Task Management Web Application is built with React and utilizes the React Context API for state management.
+The frontend of the Task Management Web Application is built with React + vite and utilizes the React Context API for state management.
 
 To set up and run the frontend application, follow these steps:
 
-1. Clone the repository: `git clone <repository_url>`
-2. Navigate to the frontend directory: `cd frontend`
-3. Install the required dependencies: `npm install`
-4. Start the development server: `npm start`
+1. Navigate to the frontend directory: `cd frontend`
+2. Install the required dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
 The frontend application will be running at `http://localhost:3000`, and you can access it in your web browser.
 
@@ -61,12 +60,3 @@ The React application is set up with a simple UI that interacts with the backend
 
 Ensure that the backend API is running and accessible at `http://localhost:8000/api/tasks/` or update the API endpoint URLs in the frontend code to match the backend API's location.
 
-Feel free to explore and customize the frontend application as needed to suit your requirements.
-
-## Conclusion
-
-The Task Management Web Application provides a simple and intuitive interface for managing tasks using the Django backend API and React frontend with React Context API. You can create, update, and delete tasks seamlessly through the user interface.
-
-Feel free to extend and enhance the application as per your needs, and if you have any questions or issues, please don't hesitate to reach out.
-
-Enjoy task management with the Task Management Web Application!
