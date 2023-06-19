@@ -19,9 +19,9 @@ const TaskContextProvider = ({ children }) => {
     fetchTasks();
   }, []);
 
-  const addTask = async (taskData) => {
+  const addTask = async (title,description) => {
     try {
-      const newTask = await createTask(taskData);
+      const newTask = await createTask(title,description);
       setTasks((prevTasks) => [...prevTasks, newTask]);
     } catch (error) {
       console.error('Error creating task:', error);

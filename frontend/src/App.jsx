@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import React from 'react';
+import { TaskContextProvider } from './context/Taskcontext';
+import TaskList from './components/TaskList';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+    <TaskContextProvider>
+      <TaskList />
+    </TaskContextProvider>
+  );
+};
 
-export default App
+export default App;

@@ -1,6 +1,6 @@
 // api.js
 
-const BASE_URL = 'http://localhost:8000/api/tasks/';
+const BASE_URL = 'http://127.0.0.1:8000/api/tasks/';
 
 // Retrieve all tasks
 export const getAllTasks = async () => {
@@ -10,13 +10,13 @@ export const getAllTasks = async () => {
 };
 
 // Create a new task
-export const createTask = async (taskData) => {
+export const createTask = async (title,description) => {
   const response = await fetch(BASE_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(taskData),
+    body: JSON.stringify({title,description}),
   });
   const data = await response.json();
   return data;
