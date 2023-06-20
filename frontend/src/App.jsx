@@ -1,11 +1,18 @@
 import React from 'react';
 import { TaskContextProvider } from './context/Taskcontext';
-import TaskList from './components/TaskList';
+import Form from './components/Form';
+import Todo from './components/Todo';
 
-const App = () => {
+const App = () => { 
   return (
     <TaskContextProvider>
-      <TaskList />
+     <>
+     <header>
+      <h1>My Todo List</h1>
+    </header>
+    <Form/>
+    <Todo/>
+     </>
     </TaskContextProvider>
   );
 };

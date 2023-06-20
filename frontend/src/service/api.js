@@ -44,7 +44,8 @@ export const deleteTask = async (taskId) => {
 
 // Mark a task as completed
 export const markTaskAsComplete = async (taskId) => {
-  const response = await fetch(`${BASE_URL}${taskId}/complete/`, {
+  const idInteger = parseInt(taskId, 10);
+  const response = await fetch(`${BASE_URL}${idInteger}/complete/`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
