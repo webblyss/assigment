@@ -1,4 +1,4 @@
-# Task Management Web Application
+![Screenshot from 2023-06-21 12-24-58](https://github.com/webblyss/assigment/assets/60282806/0787dcdc-b688-481a-8736-95deeafdbf95)# Task Management Web Application
 
 The Task Management Web Application is a simple web application built with Django for the backend API and React with React Context API for the frontend. It allows users to manage tasks by creating new tasks, updating task details, marking tasks as completed, and deleting tasks.
 
@@ -63,3 +63,23 @@ Ensure that the backend API is running and accessible at `http://localhost:8000/
 
 `.gitignore`: Specifies files and directories to be ignored by Git.
 `package.json`: Contains project metadata and dependencies.
+
+
+# UI
+![Screenshot from 2023-06-21 12-24-58](https://github.com/webblyss/assigment/assets/60282806/741d3f25-41fa-4517-a170-d6d6ae12049a)
+![Screenshot from 2023-06-21 13-57-10](https://github.com/webblyss/assigment/assets/60282806/19480528-01ed-4d80-8b02-4f24beba89a2)
+
+![Screenshot from 2023-06-21 14-10-30](https://github.com/webblyss/assigment/assets/60282806/76dd5bc7-295c-4639-a4de-ac4d682bd14d)
+
+
+# GIF
+![Screencast-from-2023-06-21-01573](https://github.com/webblyss/assigment/assets/60282806/3ad65330-2d14-4e82-86d1-e40a47966e10)
+
+
+
+
+
+
+
+
+
