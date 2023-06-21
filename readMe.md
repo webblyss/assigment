@@ -3,13 +3,8 @@
 The Task Management Web Application is a simple web application built with Django for the backend API and React with React Context API for the frontend. It allows users to manage tasks by creating new tasks, updating task details, marking tasks as completed, and deleting tasks.
 
 ## Installation
-
-To install and run the Task Management API, follow these steps:
-
 1. Clone the repository: `git clone https://github.com/webblyss/assigment`
-2. Navigate to the API directory:
-3.  `cd assignment`
-4.  `cd backend`
+To install and run the Task Management API, follow these steps:
 5. Create a virtual environment (optional but recommended):
    - On macOS and Linux:
      ```
@@ -21,6 +16,10 @@ To install and run the Task Management API, follow these steps:
      python -m venv env
      .\env\Scripts\activate
      ```
+
+2. Navigate to the API directory:
+3.  `cd assignment`
+4.  `cd backend`
 6. Install the required dependencies: `pip install -r requirements.txt`
 7. Apply database migrations: `python manage.py migrate`
 8. Start the development server: `python manage.py runserver`
