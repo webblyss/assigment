@@ -7,5 +7,5 @@ router.register(r'tasks', TaskViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('api/tasks/<int:pk>/complete/', TaskViewSet.as_view({'put': 'complete_task'}), name='task-complete'),
+    path('tasks/<int:pk>/complete/', TaskViewSet.as_view({'put': 'complete_task'}), name='task-complete'),
 ]
