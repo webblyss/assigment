@@ -1,12 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { TaskContext } from '../context/Taskcontext';
+import UpdateTodoModal from './UpdateTodoModal';
 
 const Todo = () => {
-  const { tasks, markTaskComplete, deleteTaskItem } = useContext(TaskContext);
-  
+  const { tasks, markTaskComplete, deleteTaskItem, updateTaskItem } = useContext(TaskContext);
+  const [selectedTodo, setSelectedTodo] = useState(null);
 
   const handleComplete = (taskId) => {
     markTaskComplete(taskId);
+  };
+
+  const handleOpenUpdateModal = (todo) => {
+    setSelectedTodo(todo);
+  };
+
+  const handleCloseUpdateModal = () => {
+    setSelectedTodo(null);
+  };
+
+  const handleUpdateTodo = (taskId, updatedData) => {
+    updateTaskItem(taskId, updatedData);
+    setSelectedTodo(null);
   };
 
   const uncompletedTasks = tasks.filter(task => !task.completed);
@@ -17,7 +31,7 @@ const Todo = () => {
       <ul className="todo-list">
         {uncompletedTasks.map((task) => (
           <div className="todo" key={task.id}>
-            <li className={`todo-item ${task.completed ? 'completed' : ''}`}>
+            <li className={`todo-item ${task.completed ? 'completed' : ''}`}  onClick={() => handleOpenUpdateModal(task)}>
               {task.title}
             </li>
             {!task.completed ? (
@@ -52,6 +66,9 @@ const Todo = () => {
           </div>
         ))}
       </ul>
+      {selectedTodo && (
+        <UpdateTodoModal todo={selectedTodo} onUpdate={handleUpdateTodo} onClose={handleCloseUpdateModal} />
+      )}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { TaskContext } from '../context/Taskcontext';
 const Form = () => {
-    const {  addTask, } = useContext(TaskContext);
+    const {  addTask,updateTaskItem } = useContext(TaskContext);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
   
@@ -13,6 +13,9 @@ const Form = () => {
         setDescription('');
       }
     };
+
+    
+
   return (
     <form onSubmit={handleAddTask}>
     <input type="text" className="todo-input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder='title'/>
