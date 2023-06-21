@@ -91,5 +91,3 @@ Ensure that the backend API is running and accessible at `http://localhost:8000/
 
 `.gitignore`: Specifies files and directories to be ignored by Git.
 `package.json`: Contains project metadata and dependencies.
-
-
