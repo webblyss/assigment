@@ -60,3 +60,36 @@ The React application is set up with a simple UI that interacts with the backend
 
 Ensure that the backend API is running and accessible at `http://localhost:8000/api/tasks/` or update the API endpoint URLs in the frontend code to match the backend API's location.
 
+## Directory Structure
+
+├── public
+│   └── vite.svg
+├── src
+│   ├── components
+│   │   ├── Form.jsx
+│   │   ├── TaskList.jsx
+│   │   └── Todo.jsx
+│   ├── context
+│   │   └── TaskContext.jsx
+│   ├── service
+│   │   └── api.js
+│   ├── App.jsx
+│   └── index.jsx
+├── .index.html
+├── .gitignore
+├── package.json
+├── .vite.config.js
+└── README.md
+
+
+`public`: Contains the static assets and the index.html file.
+`components`: Contains the React components used in the application.
+`context`: Contains the React Context implementation for state management.
+`service`: Contains the API service file for making HTTP requests.
+`App.jsx`: The root component of the application.
+`index.jsx`: Entry point of the application.
+
+`.gitignore`: Specifies files and directories to be ignored by Git.
+`package.json`: Contains project metadata and dependencies.
+
+
