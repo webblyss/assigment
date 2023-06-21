@@ -60,3 +60,18 @@ The React application is set up with a simple UI that interacts with the backend
 
 Ensure that the backend API is running and accessible at `http://localhost:8000/api/tasks/` or update the API endpoint URLs in the frontend code to match the backend API's location.
 
+
+# THE IS HOW THE APP LOOK LIKE
+
+![Screenshot from 2023-06-21 12-24-58](https://github.com/webblyss/assigment/assets/60282806/c1378614-eed1-483d-8253-571ca2a9db7c)
+
+![Screenshot from 2023-06-21 14-10-30](https://github.com/webblyss/assigment/assets/60282806/808e4a89-6855-4afc-909f-6bda1004d678)
+
+
+
+# GIF VIDEO
+
+![Screencast-from-2023-06-21-01573](https://github.com/webblyss/assigment/assets/60282806/ddc93085-1454-452e-af4e-9024a7e15f6d)
+
+
+
